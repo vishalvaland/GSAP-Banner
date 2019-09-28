@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tweenmax Demo 1</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="banner">
+		<img class="corner1" src="images/corner1.png" alt="">
+		<img  class="corner2" src="images/corner2.png" alt="">
+		<img  class="corner3" src="images/corner3.png" alt="">
+		<img  class="corner4" src="images/corner4.png" alt="">
+		<img  class="gsap" src="images/gsap.png" alt="">
+		<img  class="invitation" src="images/invitation.png" alt="">
+		<img class="stripl" src="images/stripl.png" alt="">
+		<img class="stripr" src="images/stripr.png" alt="">
+		<img class="starl"src="images/starl.png" alt="">
+		<img class="starr" src="images/starr.png" alt="">
+		<img class="nye" src="images/nye.png" alt="">
+		<img class="ribbon"src="images/ribbon.png" alt="">
+		<img class="c2020" src="images/2020.png" alt="">
+		<img class="shine" src="images/shine.png" alt="">
+		<img class="shine2" src="images/Shine2.png" alt="">
+		<img class="shine3"src="images/Shine3.png" alt="">
+		<img class="celebration"src="images/celebration.png" alt="">
+		<img class="celebrationBox"src="images/boxbg.png" alt="">
+		<img class="dj1"src="images/dj1.png" alt="">
+		<img class="dot" src="images/dots.png" alt="">
+		<img class="dj2"src="images/dj1.png" alt="">
+		<img class="time" src="images/time.png"  alt="">
+		<img class="join"src="images/join.png" alt="">
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<script>
+		var tl = new TimelineMax();
+
+			// var tl2 = new TimelineMax({repeat:5, yoyo:true});
+			//tl.set('.join',1, {opacity:0}),
+
+			tl.from('.corner1', 0.5, {x: -50, y: -50}, 'allIn')
+
+			.from('.corner2', 0.5, {x: 50, y: -50},'allIn')
+			.from('.corner3',0.5, {x: 50, y: 50},'allIn')
+			.from('.corner4', 0.5, {x: -50, y: 50},'allIn')
+			.from('.gsap',0.5,{x:0, y:-60, ease: Power3.easeIn, autoAlpha: 0})
+			.fromTo('.invitation',1,{width:231,opacity:0 },{width:231,ease: Back.easeIn,opacity:1})
+			.fromTo('.nye', 1, {scale: 0},{scale: 1}, 0.5)
+			.from('.stripl', 0.5, {x: -150, y: 0},'stripIn')
+			.from('.stripr',0.5, {x: 150, y: 0},'stripIn')
+			.from('.starl', 0.5, {x: -150, y: 0},'starIn')
+			.from('.starr',0.5, {x: 150, y: 0},'starIn' )
+			// .from('.starl',0.2, {   repeat:-1, opacity:0.95,ease:SteppedEase.config(1),})
+			// .from('.starr',0.2, {   repeat:-1, opacity:0.95,ease:SteppedEase.config(1),})
+			.staggerFromTo('.starr,.starl', 1, {opacity: 0.75,repeat: -1,ease: Sine.easeOut,yoyo:true},{opacity: 1,repeat: -1,ease: Sine.easeIn,yoyo:true})
+			.fromTo('.c2020', 0.5, {scale: 0},{scale: 1,delay:0.5},1)
+			// .to('.shine,.shine2,.shine3',1, {opacity:1,})
+			.staggerFromTo('.shine,.shine2,.shine3', 1, {opacity: 0,repeat: -1,ease: Sine.easeOut,yoyo:true},{opacity: 1,repeat: -1,ease: Sine.easeIn,yoyo:true})
+			.from('.ribbon', 1, {x: 0, y: -350,ease: Power2.easeIn,delay:0.5},1)
+			.fromTo('.ribbon',1, {scale: 0.9,opacity:0.9,repeat:5, yoyo:true},{scale: 1,opacity:1,repeat:5, yoyo:true})
+			.to(".celebration", 2, {opacity:1, ease:RoughEase.ease.config({points:50, strength:2, clamp:true})})
+			.to(".celebrationBox", 0.5, {opacity:1, ease:Power2.easeIn,delay:-2})
+			.to(".dj1", 0.5, {opacity:1, ease:Power2.easeIn})
+			.to(".dot", 0.5, {opacity:1, ease:Power2.easeIn})
+			.to(".dj2", 0.5, {opacity:1, ease:Power2.easeIn})
+			.to(".time", 0.5, {opacity:1, ease:Power2.easeIn})
+			.to(".join", 1, {opacity:1, ease:Power2.easeIn},'s')
+			.fromTo('.join',1, {scale: 0.9,repeat:-1, yoyo:true},{scale: 1,repeat:-1, yoyo:true,delay:2},'s')
+		</script>
+	</body>
+	</html>

@@ -1,0 +1,115 @@
+.banner{
+	width: 300px;
+	height:600px;
+	background: url('../images/bg.png');
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.banner img{
+	position: absolute;
+}
+.corner1{
+	top: 0;
+	left: 0;
+}
+.corner2{
+	top: 0;
+	right: 0;
+}
+.corner3{
+	bottom: 0;
+	right: 0;
+}
+.corner4{
+	bottom: 0;
+	left: 0;
+}
+.gsap {
+	left: 120px;
+	top: 30px;
+	opacity: 1;
+}
+.invitation{
+	left: 35px;
+	top: 80px;
+	opacity: 1;
+}
+.nye{
+	top: 130px;
+	left: 80px;
+}
+.stripl{
+	top:120px;
+	left:12px;
+}
+.stripr{
+	top:120px;
+	right:12px;
+}
+.starl{
+	top:120px;
+	left:12px;
+}
+.starr{
+	top:120px;
+	right:12px;
+}
+.c2020{
+	top: 25px;
+}
+.ribbon{
+	top: 10px;
+	z-index: 1;
+}
+.shine{
+	top: 124px;
+	right: 3px;
+	opacity: 0;
+}
+.shine2{
+	top: 93px;
+	right: 190px;
+	opacity: 0;
+}
+.shine3{
+	top: 178px;
+	right: 227px;
+	opacity: 0;
+}
+.celebration{
+	opacity: 0;
+	top: 290px;
+	left:50px;
+}
+.celebrationBox{
+	opacity: 0;
+	top: 308px;
+	left:  20px;
+}
+.dj1{
+	opacity: 0;
+	top: 337px;
+	left: 74px;
+}
+.dot{
+	opacity: 0;
+	top:405px;
+	left: 130px;
+}
+.dj2{
+	opacity: 0;
+	top: 425px;
+	left: 74px;
+}
+.time{
+	opacity: 0;
+	top:500px;
+	left: 30px;
+}
+.join {
+    opacity: 0;
+    top: 553px;
+    left: 98px;
+}
